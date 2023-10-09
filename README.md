@@ -5,21 +5,15 @@
 
 为减少重复请求，合理利用资源，建议提前在 issues 中搜索镜像是否已转换过，可以直接复用
 
-示例：[issues搜索registry.k8s.io/kube-apiserver:v1.27.4](https://github.com/togettoyou/hub-mirror/issues?q=registry.k8s.io%2Fkube-apiserver%3Av1.27.4)
+示例：[issues搜索registry.k8s.io/kube-apiserver:v1.27.4](https://github.com/lx164/hub-mirror-sync/issues?q=registry.k8s.io%2Fkube-apiserver%3Av1.27.4)
 
 ## 原理
 
-[无法拉取 gcr.io 镜像？用魔法来打败魔法](https://mp.weixin.qq.com/s/Vt0FRTx1PsoYFdLa0QZzWw)
-
-更多云原生技术可关注微信公众号：【gopher云原生】
-
-<img src="https://user-images.githubusercontent.com/55381228/221747734-13783ce6-1969-4c10-acd6-833f5046aa85.png" width="300px">
-
 ## 开始使用
 
-### 方案一：白嫖我的，点个 Star ，[直接提交 issues ](https://github.com/togettoyou/hub-mirror/issues/new/choose)，按照 issue 模板修改内容即可
+### 方案一：白嫖我的，点个 Star ，[直接提交 issues ](https://github.com/lx164/hub-mirror-sync/issues/new/choose)，按照 issue 模板修改内容即可
 
-要求：严格按照模板规范提交，参考： [成功案例](https://github.com/togettoyou/hub-mirror/issues/948)
+要求：严格按照模板规范提交，参考： [成功案例](https://github.com/lx164/hub-mirror-sync/issues/948)
 
 > 当任务失败时，可以查看失败原因并直接修改 issues 的内容，即可重新触发任务执行
 
@@ -59,7 +53,7 @@
 ### 方案三：已有魔法，支持本地使用（好像用不着）
 
 ```shell
-$ go install github.com/togettoyou/hub-mirror@latest
+$ go install github.com/lx164/hub-mirror-sync@latest
 ```
 
 ```shell
@@ -71,7 +65,7 @@ $ hub-mirror --username=xxxxxx --password=xxxxxx --repository=registry.cn-hangzh
 ### 方案四：作为库使用（貌似没什么用）
 
 ```shell
-$ go get github.com/togettoyou/hub-mirror@latest
+$ go get github.com/lx164/hub-mirror-sync@latest
 ```
 
 ```go
@@ -82,7 +76,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/togettoyou/hub-mirror/pkg"
+	"github.com/lx164/hub-mirror-sync/pkg"
 )
 
 func main() {
